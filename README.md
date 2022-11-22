@@ -1,5 +1,5 @@
-# Project Name
-The briefest description of my cool project and why you should all use it.
+# Link's Tic Tac Toe
+I'm designing 
 
 ## :computer: [Click here](#) to see my live project!
 
