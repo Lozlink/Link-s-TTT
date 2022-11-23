@@ -1,16 +1,11 @@
 # Link's Tic Tac Toe
 Welcome to my 
 
-## :computer: [Click here](#) to see my live project!
+## :computer: [Click here]() to see my live project!
 
 ## :page_facing_up: About
 - How to use my awesome project.
-- Download instructions (if relevant):
-```zsh
-$ git clone my-awesome-app
-$ cd my-awesome-app
-$ node app.js
-```
+
 - Add in-app screenshots.
 
 ## :pencil2: Planning & Problem Solving
