@@ -1,5 +1,5 @@
 # Link's Tic Tac Toe
-I'm designing 
+Welcome to my 
 
 ## :computer: [Click here](#) to see my live project!
 
