@@ -32,3 +32,13 @@ aside {
     text-align: center;
     padding-top: 50px;
 }
+
+.link {
+    background-image: url(https://www.zeldadungeon.net/wiki/images/thumb/f/fd/Link.png/400px-Link.png);
+    background-size: 246px 246px;
+}
+
+.zelda {
+    background-image: url(https://static.wikia.nocookie.net/p__/images/c/c2/HWAoC_Zelda_Artwork.png/revision/latest?cb=20201102173619&path-prefix=protagonist);
+    background-size: 246px 246px;
+}
