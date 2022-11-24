@@ -1,7 +1,4 @@
-* {
-    box-sizing: border-box;
-    border: 1px solid red;
-}
+
 
 header {
     text-align: center;
@@ -13,11 +10,18 @@ header {
 h1 {
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 h2{
-    font-size: 2rem;
+    font-size: 3rem;
+}
+
+.p1 {
+    color: green
+}
+.p2 {
+    color: pink
 }
 body {
     margin: 0 auto;
@@ -26,7 +30,7 @@ body {
     font-family: Zelda;
 }
  body img {
-    opacity: 20%;
+    opacity: 50%;
     background-repeat:no-repeat
  }
 aside {
@@ -51,7 +55,7 @@ aside {
 
 .btm {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .link {
@@ -68,4 +72,20 @@ aside {
     font-size: 2rem;
     color: green;
     text-align: center;
+}
+
+#b0, #b1, #b2 {
+    border-top: none;
+}
+
+#b0, #b3, #b6 {
+    border-left: none;
+}
+
+#b6, #b7, #b8 {
+    border-bottom: none;
+}
+
+#b2, #b5, #b8 {
+    border-right: none;
 }
