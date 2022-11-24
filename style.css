@@ -46,12 +46,11 @@ aside {
     height: 250px;
     width: 250px;
     border: 2px solid green;
-    color: rgba(0, 0, 0, 0.5)
-    
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .btm {
-    text-align: center;
+    text-align: center;*
     padding-top: 50px;
 }
 

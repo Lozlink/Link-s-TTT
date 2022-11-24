@@ -29,7 +29,7 @@ addEventListener('click', function (event){
     if (targetBox.textContent == '' && turn == linkX){
         targetBox.textContent = "X";
         targetBox.classList.toggle('link');    
-    } else if (targetBox.textContent == '' && turn == zeldaO){
+    } else if (targetBox.textContent == '' && turn == zeldaO) {
         targetBox.textContent = "O"; 
         targetBox.classList.toggle('zelda');
         }
@@ -161,58 +161,78 @@ var b8 = document.querySelector('#b8')
 function checkWin(){
     if (b0.textContent == "X" && b1.textContent == "X" && b2.textContent == "X" ) {
         document.querySelector('.result').innerHTML = "Link Wins!"
+        document.querySelector('.result').style.display = 'block';
     } else if 
     (b0.textContent == "X" && b3.textContent == "X" && b6.textContent == "X") {
         document.querySelector('.result').innerHTML = "Link Wins!"
+        document.querySelector('.result').style.display = 'block';
     } else if 
     (b0.textContent == "X" && b4.textContent == "X" && b8.textContent == "X") {
         document.querySelector('.result').innerHTML = "Link Wins!"
+        document.querySelector('.result').style.display = 'block';
     } else if
     (b1.textContent == "X" && b4.textContent == "X" && b7.textContent == "X") {
         document.querySelector('.result').innerHTML = "Link Wins!"
+        document.querySelector('.result').style.display = 'block';
     } else if
     (b2.textContent == "X" && b5.textContent == "X" && b8.textContent == "X"){
         document.querySelector('.result').innerHTML = "Link Wins!"
+        document.querySelector('.result').style.display = 'block';
     } else if
     (b2.textContent == "X" && b4.textContent == "X" && b6.textContent == "X") {
         document.querySelector('.result').innerHTML = "Link Wins!"
+        document.querySelector('.result').style.display = 'block';
     } else if
     (b3.textContent == "X" && b4.textContent == "X" && b5.textContent == "X") {
         document.querySelector('.result').innerHTML = "Link Wins!"
+        document.querySelector('.result').style.display = 'block';
     } else if
     (b6.textContent == "X" && b7.textContent == "X" && b8.textContent == "X") {
         document.querySelector('.result').innerHTML = "Link Wins!"
+        document.querySelector('.result').style.display = 'block';
     } else if
     (b0.textContent == "O" && b1.textContent == "0" && b2.textContent == "O") {
         document.querySelector('.result').innerHTML = "Zelda Wins!"
+        document.querySelector('.result').style.display = 'block';
     } else if 
     (b0.textContent == "O" && b3.textContent == "O" && b6.textContent == "O") {
         document.querySelector('.result').innerHTML = "Zelda Wins!"
+        document.querySelector('.result').style.display = 'block';
     } else if 
     (b0.textContent == "O" && b4.textContent == "O" && b8.textContent == "O") {
         document.querySelector('.result').innerHTML = "Zelda Wins!"
+        document.querySelector('.result').style.display = 'block';
     } else if
     (b1.textContent == "O" && b4.textContent == "O" && b7.textContent == "O") {
         document.querySelector('.result').innerHTML = "Zelda Wins!"
+        document.querySelector('.result').style.display = 'block';
     } else if
     (b2.textContent == "O" && b5.textContent == "O" && b8.textContent == "O") {
         document.querySelector('.result').innerHTML = "Zelda Wins!"
+        document.querySelector('.result').style.display = 'block';
     } else if
     (b2.textContent == "O" && b4.textContent == "O" && b6.textContent == "O") {
         document.querySelector('.result').innerHTML = "Zelda Wins!"
+        document.querySelector('.result').style.display = 'block';
     } else if
     (b3.textContent == "O" && b4.textContent == "O" && b5.textContent == "O") {
         document.querySelector('.result').innerHTML = "Zelda Wins!"
+        document.querySelector('.result').style.display = 'block';
     } else if
     (b6.textContent == "O" && b7.textContent == "O" && b8.textContent == "O") {
         document.querySelector('.result').innerHTML = "Zelda Wins!"
-        
+        document.querySelector('.result').style.display = 'block';
     } else if 
     ((b0.textContent == 'X' || b0.textContent == 'O') && (b1.textContent == 'X' || b1.textContent == 'O') && (b2.textContent == 'X' || b2.textContent == 'O') && (b3.textContent == 'X' || b3.textContent == 'O') && (b4.textContent == 'X' || b4.textContent == 'O') && (b5.textContent == 'X' || b5.textContent == 'O') && (b6.textContent == 'X' || b6.textContent == 'O') && (b7.textContent == 'X' || b7.textContent == 'O') && (b8.textContent == 'X' || b8.textContent == 'O')) {
             document.querySelector('.result').innerHTML = "It's a Draw!";
+            document.querySelector('.result').style.display = 'block';
         }
 }
-checkWin()
+
+if (document.querySelector('.result').style.display == "block") {
+    alert('Game has already been won!');
+ }
+
 
 
 
