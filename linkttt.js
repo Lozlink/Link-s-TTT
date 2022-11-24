@@ -21,18 +21,26 @@ function changeTurn() {
 // changeTurn()
 //     })
 // var tile = document.querySelectorAll('.box')
+
 addEventListener('click', function (event){
     var targetBox = event.target
-    console.log(targetBox)
+    if (targetBox.textContent!= '') 
+        event.preventDefault();
     if (targetBox.textContent == '' && turn == linkX){
-        targetBox.classList.toggle('link');
-         targetBox.textContent = "X";
-    } else if (targetBox.textContent == '' && turn == zeldaO){ 
+        targetBox.textContent = "X";
+        targetBox.classList.toggle('link');    
+    } else if (targetBox.textContent == '' && turn == zeldaO){
+        targetBox.textContent = "O"; 
         targetBox.classList.toggle('zelda');
-         targetBox.textContent = "0";
         }
- changeTurn()
-    })
+checkWin()
+changeTurn()
+});
+
+document.querySelector('.btm').addEventListener('click', function(){
+    window.location.reload();
+    return false;
+  });
 
 // tile[1].addEventListener('click', function (){
 //         if (tile[1].textContent == '' && turn == player1){
@@ -114,28 +122,95 @@ addEventListener('click', function (event){
 
 // //assigning DOM to the playing board
 
-b0 = document.querySelector('#b0').textContent
-b1 = document.querySelector('#b1').textContent
-b2 = document.querySelector('#b2').textContent
-b3 = document.querySelector('#b3').textContent
-b4 = document.querySelector('#b4').textContent
-b5 = document.querySelector('#b5').textContent
-b6 = document.querySelector('#b6').textContent
-b7 = document.querySelector('#b7').textContent
-b8 = document.querySelector('#b8').textContent
+
+// var winningCombo = [
+//     [b0, b1, b2],
+//     [b0, b3, b6],
+//     [b0, b4, b8],
+//     [b1, b4, b7],
+//     [b2, b5, b8],
+//     [b2, b4, b6],
+//     [b3, b4, b5],
+//     [b6, b7, b8],
+// ]
+
+// function allChecked(indexes) {
+//     return indexes.every(
+//       function(indexes){
+//         if(winningCombo[indexes].textContent === "X"){
+//           return winningCombo[indexes];
+//         }
+//         else if(winningCombo[indexes].textContent === "O"){
+//           return winningCombo[indexes];
+//         }
+  
+//       }
+//     )
+//   }
+
+var b0 = document.querySelector('#b0')
+var b1 = document.querySelector('#b1')
+var b2 = document.querySelector('#b2')
+var b3 = document.querySelector('#b3')
+var b4 = document.querySelector('#b4')
+var b5 = document.querySelector('#b5')
+var b6 = document.querySelector('#b6')
+var b7 = document.querySelector('#b7')
+var b8 = document.querySelector('#b8')
+
+function checkWin(){
+    if (b0.textContent == "X" && b1.textContent == "X" && b2.textContent == "X" ){
+        console.log("Link Wins!")
+    } else if 
+    (b0.textContent == "X" && b3.textContent == "X" && b6.textContent == "X"){
+        alert("Link Wins!")
+    } else if 
+    (b0.textContent == "X" && b4.textContent == "X" && b8.textContent == "X"){
+        alert("Link Wins!")
+    } else if
+    (b1.textContent == "X" && b4.textContent == "X" && b7.textContent == "X"){
+        alert("Link Wins!")
+    } else if
+    (b2.textContent == "X" && b5.textContent == "X" && b8.textContent == "X"){
+       alert("Link Wins!")
+    } else if
+    (b2.textContent == "X" && b4.textContent == "X" && b6.textContent == "X"){
+        alert("Link Wins!")
+    } else if
+    (b3.textContent == "X" && b4.textContent == "X" && b5.textContent == "X"){
+        alert("Link Wins!")
+    } else if
+    (b6.textContent == "X" && b7.textContent == "X" && b8.textContent == "X"){
+        alert("Link Wins!")
+    } else if
+    (b0.textContent == "O" && b1.textContent == "0" && b2.textContent == "O"){
+        alert("Zelda Wins!")
+    } else if 
+    (b0.textContent == "O" && b3.textContent == "O" && b6.textContent == "O"){
+        alert("Zelda Wins!")
+    } else if 
+    (b0.textContent == "O" && b4.textContent == "O" && b8.textContent == "O"){
+        alert("Zelda Wins!")
+    } else if
+    (b1.textContent == "O" && b4.textContent == "O" && b7.textContent == "O"){
+        alert("Zelda Wins!")
+    } else if
+    (b2.textContent == "O" && b5.textContent == "O" && b8.textContent == "O"){
+        alert("Zelda Wins!")
+    } else if
+    (b2.textContent == "O" && b4.textContent == "O" && b6.textContent == "O"){
+        alert("Zelda Wins!")
+    } else if
+    (b3.textContent == "O" && b4.textContent == "O" && b5.textContent == "O"){
+        alert("Zelda Wins!")
+    } else if
+    (b6.textContent == "O" && b7.textContent == "O" && b8.textContent == "O"){
+        alert("Zelda Wins!")
+    }   
+}
+checkWin()
 
 
-// // Set winning Combinations 
-winCombo = [
-    [b0, b1, b2],
-    [b0, b3, b6],
-    [b0, b4, b8],
-    [b1, b4, b7],
-    [b2, b5, b8],
-    [b2, b4, b6],
-    [b3, b4, b5],
-    [b6, b7, b8],
-]
 
 
 

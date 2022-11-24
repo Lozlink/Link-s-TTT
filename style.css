@@ -10,16 +10,25 @@ header {
 
 body {
     margin: 0 auto;
+    background-image: url(https://chaosmechanica.files.wordpress.com/2012/12/legend-of-zelda-triforce.jpg?w=848);
+    background-size: cover;
+    
 }
-
+ body img {
+    opacity: 20%;
+    background-repeat:no-repeat
+ }
 aside {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    margin: 0 auto; 
 }
 
 .row{
     display: flex;
     justify-content: center;
+    max-width: 750px;
+    margin: 0 auto;
 }
 
 .box {
@@ -39,6 +48,6 @@ aside {
 }
 
 .zelda {
-    background-image: url(https://static.wikia.nocookie.net/p__/images/c/c2/HWAoC_Zelda_Artwork.png/revision/latest?cb=20201102173619&path-prefix=protagonist);
+    background-image: url(https://images.immediate.co.uk/production/volatile/sites/3/2022/10/Zelda-series-on-Netflix-f070bf9.jpg);
     background-size: 246px 246px;
 }

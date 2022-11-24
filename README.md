@@ -1,10 +1,10 @@
 # Link's Tic Tac Toe
-Welcome to my 
+Welcome to my version of Tic Tac Toe. I based it around an Intellectual Property that I have loved for over 25 years. This project will be ongoing as my education persists so I can update it to work more efficiently. 
 
-## :computer: [Click here]() to see my live project!
+## :computer: [Click here](https://lozlink.github.io/Link-s-TTT/) to see my live project!
 
 ## :page_facing_up: About
-- How to use my awesome project.
+A Simple 
 
 - Add in-app screenshots.
 
@@ -15,9 +15,9 @@ Welcome to my
 ![Wireframing](https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
 
 ## :rocket: Cool tech
-- Programming languages
-- Libraries
-- Animations
+- Javascript!
+- HTML!
+- CSS!
 - Anything else you'd be proud to show your parents
 
 ## :scream: Bugs to fix :poop:
