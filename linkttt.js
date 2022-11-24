@@ -160,7 +160,7 @@ var b8 = document.querySelector('#b8')
 
 function checkWin(){
     if (b0.textContent == "X" && b1.textContent == "X" && b2.textContent == "X" ){
-        console.log("Link Wins!")
+        alert("Link Wins!")
     } else if 
     (b0.textContent == "X" && b3.textContent == "X" && b6.textContent == "X"){
         alert("Link Wins!")

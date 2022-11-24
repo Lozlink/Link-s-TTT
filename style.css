@@ -6,13 +6,24 @@
 header {
     text-align: center;
 }
+@font-face {
+    font-family: Zelda;
+    src: url(./TheWildBreathOfZelda-15Lv.ttf);
+}
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 3rem;
+}
 
-
+h2{
+    font-size: 2rem;
+}
 body {
     margin: 0 auto;
     background-image: url(https://chaosmechanica.files.wordpress.com/2012/12/legend-of-zelda-triforce.jpg?w=848);
     background-size: cover;
-    
+    font-family: Zelda;
 }
  body img {
     opacity: 20%;
