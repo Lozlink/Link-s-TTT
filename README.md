@@ -4,9 +4,8 @@ Welcome to my version of Tic Tac Toe. I based it around an Intellectual Property
 ## :computer: [Click here](https://lozlink.github.io/Link-s-TTT/) to see my live project!
 
 ## :page_facing_up: About
-A Simple 
-
-- Add in-app screenshots.
+A simple Zelda-themed Tic-Tac-Toe Game 
+!(alt
 
 ## :pencil2: Planning & Problem Solving
 - Talk about approach to the problem.
@@ -18,11 +17,11 @@ A Simple
 - Javascript!
 - HTML!
 - CSS!
-- Anything else you'd be proud to show your parents
+- Used an unique downloaded font!
 
 ## :scream: Bugs to fix :poop:
-- Anything a little broken
-- Anything a LOT broken
+- Clicking anywhere else on the page still counts it as a click. 
+- Can't disable 
 - Buttons to not click too many times (cause its broken :unamused:)
 
 ## :sob: Lessons learnt
