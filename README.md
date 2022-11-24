@@ -1,4 +1,4 @@
-# Link's Tic Tac Toe
+# Hyrule's Tic Tac Toe
 Welcome to my version of Tic Tac Toe. I based it around an Intellectual Property that I have loved for over 25 years. This project will be ongoing as my education persists so I can update it to work more efficiently. 
 
 ## :computer: [Click here](https://lozlink.github.io/Link-s-TTT/) to see my live project!

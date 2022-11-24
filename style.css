@@ -11,6 +11,19 @@ h1 {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 4rem;
+    animation: colorFade 5s infinite;
+}
+
+@keyframes colorFade {
+    0% {
+        color : green;
+    }
+    50% {
+        color: pink
+    }
+    100% {
+        color: gold
+    }
 }
 
 h2{
@@ -32,7 +45,8 @@ body {
  body img {
     opacity: 50%;
     background-repeat:no-repeat
- }
+}
+
 aside {
     display: flex;
     justify-content: space-around;

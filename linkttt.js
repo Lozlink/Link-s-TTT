@@ -2,6 +2,7 @@
 var linkX = "X";
 var zeldaO = "O";
 var turn = linkX
+var gameWon = false;
 
 function changeTurn() {
     if (turn === linkX){
@@ -23,6 +24,12 @@ function changeTurn() {
 // var tile = document.querySelectorAll('.box')
 
 addEventListener('click', function (event){
+    console.log("Game Won", gameWon);
+		if (gameWon) {
+	    console.log("STOP");
+        event.preventDefault();
+        return false;
+    }
     var targetBox = event.target
     if (targetBox.textContent!= '') 
         event.preventDefault();
@@ -159,36 +166,45 @@ var b7 = document.querySelector('#b7')
 var b8 = document.querySelector('#b8')
 
 function checkWin(){
+    
     if (b0.textContent == "X" && b1.textContent == "X" && b2.textContent == "X" ) {
         document.querySelector('.result').innerHTML = "Link Wins!"
+        gameWon = true;
         
     } else if 
     (b0.textContent == "X" && b3.textContent == "X" && b6.textContent == "X") {
         document.querySelector('.result').innerHTML = "Link Wins!"
+        gameWon = true;
         
     } else if 
     (b0.textContent == "X" && b4.textContent == "X" && b8.textContent == "X") {
         document.querySelector('.result').innerHTML = "Link Wins!"
+        gameWon = true;
         
     } else if
     (b1.textContent == "X" && b4.textContent == "X" && b7.textContent == "X") {
         document.querySelector('.result').innerHTML = "Link Wins!"
+        gameWon = true;
         
     } else if
     (b2.textContent == "X" && b5.textContent == "X" && b8.textContent == "X"){
         document.querySelector('.result').innerHTML = "Link Wins!"
+        gameWon = true;
         
     } else if
     (b2.textContent == "X" && b4.textContent == "X" && b6.textContent == "X") {
         document.querySelector('.result').innerHTML = "Link Wins!"
+        gameWon = true;
         
     } else if
     (b3.textContent == "X" && b4.textContent == "X" && b5.textContent == "X") {
         document.querySelector('.result').innerHTML = "Link Wins!"
+        gameWon = true;
         
     } else if
     (b6.textContent == "X" && b7.textContent == "X" && b8.textContent == "X") {
         document.querySelector('.result').innerHTML = "Link Wins!"
+        gameWon = true;
         
     } else if
     (b0.textContent == "O" && b1.textContent == "0" && b2.textContent == "O") {
@@ -197,35 +213,42 @@ function checkWin(){
     } else if 
     (b0.textContent == "O" && b3.textContent == "O" && b6.textContent == "O") {
         document.querySelector('.result').innerHTML = "Zelda Wins!"
+        gameWon = true;
         
     } else if 
     (b0.textContent == "O" && b4.textContent == "O" && b8.textContent == "O") {
         document.querySelector('.result').innerHTML = "Zelda Wins!"
+        gameWon = true;
 
     } else if 
     (b1.textContent == "O" && b4.textContent == "O" && b7.textContent == "O") {
         document.querySelector('.result').innerHTML = "Zelda Wins!"
+        gameWon = true;
         
     } else if
     (b2.textContent == "O" && b5.textContent == "O" && b8.textContent == "O") {
         document.querySelector('.result').innerHTML = "Zelda Wins!"
+        gameWon = true;
        
     } else if
     (b2.textContent == "O" && b4.textContent == "O" && b6.textContent == "O") {
         document.querySelector('.result').innerHTML = "Zelda Wins!"
+        gameWon = true;
         
     } else if
     (b3.textContent == "O" && b4.textContent == "O" && b5.textContent == "O") {
         document.querySelector('.result').innerHTML = "Zelda Wins!"
+        gameWon = true;
         
     } else if
     (b6.textContent == "O" && b7.textContent == "O" && b8.textContent == "O") {
         document.querySelector('.result').innerHTML = "Zelda Wins!"
+        gameWon = true;
         
     } else if 
     ((b0.textContent == 'X' || b0.textContent == 'O') && (b1.textContent == 'X' || b1.textContent == 'O') && (b2.textContent == 'X' || b2.textContent == 'O') && (b3.textContent == 'X' || b3.textContent == 'O') && (b4.textContent == 'X' || b4.textContent == 'O') && (b5.textContent == 'X' || b5.textContent == 'O') && (b6.textContent == 'X' || b6.textContent == 'O') && (b7.textContent == 'X' || b7.textContent == 'O') && (b8.textContent == 'X' || b8.textContent == 'O')) {
             document.querySelector('.result').innerHTML = "It's a Draw!";
-            document.querySelector('.result').style.display = 'block';
+            
         }
 }
 
