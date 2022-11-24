@@ -159,54 +159,58 @@ var b7 = document.querySelector('#b7')
 var b8 = document.querySelector('#b8')
 
 function checkWin(){
-    if (b0.textContent == "X" && b1.textContent == "X" && b2.textContent == "X" ){
-        alert("Link Wins!")
+    if (b0.textContent == "X" && b1.textContent == "X" && b2.textContent == "X" ) {
+        document.querySelector('.result').innerHTML = "Link Wins!"
     } else if 
-    (b0.textContent == "X" && b3.textContent == "X" && b6.textContent == "X"){
-        alert("Link Wins!")
+    (b0.textContent == "X" && b3.textContent == "X" && b6.textContent == "X") {
+        document.querySelector('.result').innerHTML = "Link Wins!"
     } else if 
-    (b0.textContent == "X" && b4.textContent == "X" && b8.textContent == "X"){
-        alert("Link Wins!")
+    (b0.textContent == "X" && b4.textContent == "X" && b8.textContent == "X") {
+        document.querySelector('.result').innerHTML = "Link Wins!"
     } else if
-    (b1.textContent == "X" && b4.textContent == "X" && b7.textContent == "X"){
-        alert("Link Wins!")
+    (b1.textContent == "X" && b4.textContent == "X" && b7.textContent == "X") {
+        document.querySelector('.result').innerHTML = "Link Wins!"
     } else if
     (b2.textContent == "X" && b5.textContent == "X" && b8.textContent == "X"){
-       alert("Link Wins!")
+        document.querySelector('.result').innerHTML = "Link Wins!"
     } else if
-    (b2.textContent == "X" && b4.textContent == "X" && b6.textContent == "X"){
-        alert("Link Wins!")
+    (b2.textContent == "X" && b4.textContent == "X" && b6.textContent == "X") {
+        document.querySelector('.result').innerHTML = "Link Wins!"
     } else if
-    (b3.textContent == "X" && b4.textContent == "X" && b5.textContent == "X"){
-        alert("Link Wins!")
+    (b3.textContent == "X" && b4.textContent == "X" && b5.textContent == "X") {
+        document.querySelector('.result').innerHTML = "Link Wins!"
     } else if
-    (b6.textContent == "X" && b7.textContent == "X" && b8.textContent == "X"){
-        alert("Link Wins!")
+    (b6.textContent == "X" && b7.textContent == "X" && b8.textContent == "X") {
+        document.querySelector('.result').innerHTML = "Link Wins!"
     } else if
-    (b0.textContent == "O" && b1.textContent == "0" && b2.textContent == "O"){
-        alert("Zelda Wins!")
+    (b0.textContent == "O" && b1.textContent == "0" && b2.textContent == "O") {
+        document.querySelector('.result').innerHTML = "Zelda Wins!"
     } else if 
-    (b0.textContent == "O" && b3.textContent == "O" && b6.textContent == "O"){
-        alert("Zelda Wins!")
+    (b0.textContent == "O" && b3.textContent == "O" && b6.textContent == "O") {
+        document.querySelector('.result').innerHTML = "Zelda Wins!"
     } else if 
-    (b0.textContent == "O" && b4.textContent == "O" && b8.textContent == "O"){
-        alert("Zelda Wins!")
+    (b0.textContent == "O" && b4.textContent == "O" && b8.textContent == "O") {
+        document.querySelector('.result').innerHTML = "Zelda Wins!"
     } else if
-    (b1.textContent == "O" && b4.textContent == "O" && b7.textContent == "O"){
-        alert("Zelda Wins!")
+    (b1.textContent == "O" && b4.textContent == "O" && b7.textContent == "O") {
+        document.querySelector('.result').innerHTML = "Zelda Wins!"
     } else if
-    (b2.textContent == "O" && b5.textContent == "O" && b8.textContent == "O"){
-        alert("Zelda Wins!")
+    (b2.textContent == "O" && b5.textContent == "O" && b8.textContent == "O") {
+        document.querySelector('.result').innerHTML = "Zelda Wins!"
     } else if
-    (b2.textContent == "O" && b4.textContent == "O" && b6.textContent == "O"){
-        alert("Zelda Wins!")
+    (b2.textContent == "O" && b4.textContent == "O" && b6.textContent == "O") {
+        document.querySelector('.result').innerHTML = "Zelda Wins!"
     } else if
-    (b3.textContent == "O" && b4.textContent == "O" && b5.textContent == "O"){
-        alert("Zelda Wins!")
+    (b3.textContent == "O" && b4.textContent == "O" && b5.textContent == "O") {
+        document.querySelector('.result').innerHTML = "Zelda Wins!"
     } else if
-    (b6.textContent == "O" && b7.textContent == "O" && b8.textContent == "O"){
-        alert("Zelda Wins!")
-    }   
+    (b6.textContent == "O" && b7.textContent == "O" && b8.textContent == "O") {
+        document.querySelector('.result').innerHTML = "Zelda Wins!"
+        
+    } else if 
+    ((b0.textContent == 'X' || b0.textContent == 'O') && (b1.textContent == 'X' || b1.textContent == 'O') && (b2.textContent == 'X' || b2.textContent == 'O') && (b3.textContent == 'X' || b3.textContent == 'O') && (b4.textContent == 'X' || b4.textContent == 'O') && (b5.textContent == 'X' || b5.textContent == 'O') && (b6.textContent == 'X' || b6.textContent == 'O') && (b7.textContent == 'X' || b7.textContent == 'O') && (b8.textContent == 'X' || b8.textContent == 'O')) {
+            document.querySelector('.result').innerHTML = "It's a Draw!";
+        }
 }
 checkWin()
 

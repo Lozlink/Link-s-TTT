@@ -45,7 +45,9 @@ aside {
 .box {
     height: 250px;
     width: 250px;
-    border: 2px solid green 
+    border: 2px solid green;
+    color: rgba(0, 0, 0, 0.5)
+    
 }
 
 .btm {
@@ -61,4 +63,10 @@ aside {
 .zelda {
     background-image: url(https://images.immediate.co.uk/production/volatile/sites/3/2022/10/Zelda-series-on-Netflix-f070bf9.jpg);
     background-size: 246px 246px;
+}
+
+.result {
+    font-size: 2rem;
+    color: green;
+    text-align: center;
 }
