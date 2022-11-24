@@ -5,13 +5,11 @@ Welcome to my version of Tic Tac Toe. I based it around an Intellectual Property
 
 ## :page_facing_up: About
 A simple Zelda-themed Tic-Tac-Toe Game 
-!(alt
+![Example of the Game!](Capture.JPG)
 
 ## :pencil2: Planning & Problem Solving
-- Talk about approach to the problem.
-- Add screenshots/drawings of doodles/plans during the planning phase.
-- Flow charts of app logic.
-![Wireframing](https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+- Developed a plan and pseudocode that tried to tackle the project. 
+![Pseudocode](Planning.JPG)
 
 ## :rocket: Cool tech
 - Javascript!
@@ -21,11 +19,14 @@ A simple Zelda-themed Tic-Tac-Toe Game
 
 ## :scream: Bugs to fix :poop:
 - Clicking anywhere else on the page still counts it as a click. 
-- Can't disable 
-- Buttons to not click too many times (cause its broken :unamused:)
+- Can't disable the tiles still working after the game ends. 
 
 ## :sob: Lessons learnt
-What I would do differently if I could wind back the clock...
+- Plan Better. 
+- Have better time allocation to the prioritized items.
+- 
 
 ## :white_check_mark: Future features
-Cool things I would add if I can keep working on this
+- Score Counter
+- More intuitive feature to reset the game, instead of reloading.
+- Audio integration.
