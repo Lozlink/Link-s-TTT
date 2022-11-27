@@ -3,6 +3,7 @@
 header {
     text-align: center;
 }
+
 @font-face {
     font-family: Zelda;
     src: url(./TheWildBreathOfZelda-15Lv.ttf);
@@ -31,7 +32,7 @@ h2{
 }
 
 .p1 {
-    color: green
+    color: green;
 }
 .p2 {
     color: pink
@@ -53,9 +54,9 @@ aside {
     margin: 0 auto; 
 }
 
-.row{
-    display: flex;
-    justify-content: center;
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
     max-width: 750px;
     margin: 0 auto;
 }
@@ -67,9 +68,10 @@ aside {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.btm {
+.buttons {
     text-align: center;
     padding-top: 20px;
+
 }
 
 .link {

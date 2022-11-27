@@ -3,6 +3,11 @@ var linkX = "X";
 var zeldaO = "O";
 var turn = linkX
 var gameWon = false;
+var reset = document.querySelector('.nextRound')
+
+// if (gamewon === true,) {
+
+// }
 
 function changeTurn() {
     if (turn === linkX){
@@ -23,9 +28,11 @@ function changeTurn() {
 //     })
 // var tile = document.querySelectorAll('.box')
 
-addEventListener('click', function (event){
+var tile = document.querySelectorAll('div')
+for (var i = 0; i < tile.length; i++) {   
+    tile[i].addEventListener('click', function (event){
     console.log("Game Won", gameWon);
-		if (gameWon) {
+		if (gameWon) { 
 	    console.log("STOP");
         event.preventDefault();
         return false;
@@ -34,26 +41,46 @@ addEventListener('click', function (event){
     if (targetBox.textContent!= '') 
         event.preventDefault();
     if (targetBox.textContent == '' && turn == linkX){
-        targetBox.textContent = "X";
         targetBox.classList.toggle('link');    
     } else if (targetBox.textContent == '' && turn == zeldaO) {
-        targetBox.textContent = "O"; 
         targetBox.classList.toggle('zelda');
         }
-checkWin()
-changeTurn()
-});
+checkWin()    
+changeTurn()   
+})
+}
 
-document.querySelector('.btm').addEventListener('click', function(){
+var linkScoreCounter = document.querySelector('.scorecounter1')
+var zeldaScoreCounter = document.querySelector('.scorecounter2')
+
+
+document.querySelector('.reset').addEventListener('click', function(){
     window.location.reload();
     return false;
   });
+
+//  document.querySelector('.nextRound').addEventListener('click', function() {
+//     if (document.querySelector('div').classList.contains("box")){
+//         document.querySelector('div').classList.remove() && docu.querySelector('div').textContent == ""
+        
+//     }
+//  }) 
+  
+// var tile = document.querySelectorAll('div')
+// for (var i = 0; i < tile.length; i++) {  
+//  document.querySelector('.nextRound').addEventListener('click', function (){ 
+//         tile[i].innerHTML = "" 
+//     })  
+
+// document.querySelector('.nextRound').addEventListener('click', function (){ 
+//     document.querySelectorAll('div').className == "" && tile.textContent == '';
+// })  
 
 // tile[1].addEventListener('click', function (){
 //         if (tile[1].textContent == '' && turn == player1){
 //             tile[1].textContent = "X"
 //         } else if (tile[1].textContent == '' && turn == player2){ 
-//             tile[1].textContent = 'O'
+//             tile[1].textContent = 'O'z
 //         }
 // changeTurn()
 //     })
@@ -167,90 +194,114 @@ var b8 = document.querySelector('#b8')
 
 function checkWin(){
     
-    if (b0.textContent == "X" && b1.textContent == "X" && b2.textContent == "X" ) {
+    if (b0.classList.contains('link') && b1.classList.contains('link') && b2.classList.contains('link')) {
         document.querySelector('.result').innerHTML = "Link Wins!"
         gameWon = true;
+        linkScoreCounter.innerHTML = parseInt(linkScoreCounter.innerHTML) + 1;
         
     } else if 
-    (b0.textContent == "X" && b3.textContent == "X" && b6.textContent == "X") {
+    (b0.classList.contains('link') && b3.classList.contains('link')&& b6.classList.contains('link')) {
         document.querySelector('.result').innerHTML = "Link Wins!"
         gameWon = true;
+        linkScoreCounter.innerHTML = parseInt(linkScoreCounter.innerHTML) + 1;
         
     } else if 
-    (b0.textContent == "X" && b4.textContent == "X" && b8.textContent == "X") {
+    (b0.classList.contains('link') && b4.classList.contains('link') && b8.classList.contains('link')) {
         document.querySelector('.result').innerHTML = "Link Wins!"
         gameWon = true;
+        linkScoreCounter.innerHTML = parseInt(linkScoreCounter.innerHTML) + 1;
         
     } else if
-    (b1.textContent == "X" && b4.textContent == "X" && b7.textContent == "X") {
+    (b1.classList.contains('link') && b4.classList.contains('link') && b7.classList.contains('link')) {
         document.querySelector('.result').innerHTML = "Link Wins!"
         gameWon = true;
-        
+        linkScoreCounter.innerHTML = parseInt(linkScoreCounter.innerHTML) + 1;
+
     } else if
-    (b2.textContent == "X" && b5.textContent == "X" && b8.textContent == "X"){
+    (b2.classList.contains('link') && b5.classList.contains('link') && b8.classList.contains('link')){
         document.querySelector('.result').innerHTML = "Link Wins!"
         gameWon = true;
-        
+        linkScoreCounter.innerHTML = parseInt(linkScoreCounter.innerHTML) + 1;
+
     } else if
-    (b2.textContent == "X" && b4.textContent == "X" && b6.textContent == "X") {
+    (b2.classList.contains('link') && b4.classList.contains('link') && b6.classList.contains('link')) {
         document.querySelector('.result').innerHTML = "Link Wins!"
         gameWon = true;
+        linkScoreCounter.innerHTML = parseInt(linkScoreCounter.innerHTML) + 1;
         
     } else if
-    (b3.textContent == "X" && b4.textContent == "X" && b5.textContent == "X") {
+    (b3.classList.contains('link') && b4.classList.contains('link') && b5.classList.contains('link')) {
         document.querySelector('.result').innerHTML = "Link Wins!"
         gameWon = true;
+        linkScoreCounter.innerHTML = parseInt(linkScoreCounter.innerHTML) + 1;
         
     } else if
-    (b6.textContent == "X" && b7.textContent == "X" && b8.textContent == "X") {
+    (b6.classList.contains('link') && b7.classList.contains('link') && b8.classList.contains('link')) {
         document.querySelector('.result').innerHTML = "Link Wins!"
         gameWon = true;
+        linkScoreCounter.innerHTML = parseInt(linkScoreCounter.innerHTML) + 1;
         
     } else if
-    (b0.textContent == "O" && b1.textContent == "0" && b2.textContent == "O") {
+    (b0.classList.contains('zelda') && b1.classList.contains('zelda') && b2.classList.contains('zelda')) {
         document.querySelector('.result').innerHTML = "Zelda Wins!"
-        
-    } else if 
-    (b0.textContent == "O" && b3.textContent == "O" && b6.textContent == "O") {
-        document.querySelector('.result').innerHTML = "Zelda Wins!"
-        gameWon = true;
-        
-    } else if 
-    (b0.textContent == "O" && b4.textContent == "O" && b8.textContent == "O") {
-        document.querySelector('.result').innerHTML = "Zelda Wins!"
-        gameWon = true;
+        gameWon = true
+        zeldaScoreCounter.innerHTML = parseInt(zeldaScoreCounter.innerHTML) + 1;
 
     } else if 
-    (b1.textContent == "O" && b4.textContent == "O" && b7.textContent == "O") {
+    (b0.classList.contains('zelda') && b3.classList.contains('zelda') && b6.classList.contains('zelda')) {
         document.querySelector('.result').innerHTML = "Zelda Wins!"
         gameWon = true;
-        
-    } else if
-    (b2.textContent == "O" && b5.textContent == "O" && b8.textContent == "O") {
-        document.querySelector('.result').innerHTML = "Zelda Wins!"
-        gameWon = true;
-       
-    } else if
-    (b2.textContent == "O" && b4.textContent == "O" && b6.textContent == "O") {
-        document.querySelector('.result').innerHTML = "Zelda Wins!"
-        gameWon = true;
-        
-    } else if
-    (b3.textContent == "O" && b4.textContent == "O" && b5.textContent == "O") {
-        document.querySelector('.result').innerHTML = "Zelda Wins!"
-        gameWon = true;
-        
-    } else if
-    (b6.textContent == "O" && b7.textContent == "O" && b8.textContent == "O") {
-        document.querySelector('.result').innerHTML = "Zelda Wins!"
-        gameWon = true;
+        zeldaScoreCounter.innerHTML = parseInt(zeldaScoreCounter.innerHTML) + 1;
         
     } else if 
-    ((b0.textContent == 'X' || b0.textContent == 'O') && (b1.textContent == 'X' || b1.textContent == 'O') && (b2.textContent == 'X' || b2.textContent == 'O') && (b3.textContent == 'X' || b3.textContent == 'O') && (b4.textContent == 'X' || b4.textContent == 'O') && (b5.textContent == 'X' || b5.textContent == 'O') && (b6.textContent == 'X' || b6.textContent == 'O') && (b7.textContent == 'X' || b7.textContent == 'O') && (b8.textContent == 'X' || b8.textContent == 'O')) {
+    (b0.classList.contains('zelda') && b4.classList.contains('zelda') && b8.classList.contains('zelda')) {
+        document.querySelector('.result').innerHTML = "Zelda Wins!"
+        gameWon = true;
+        zeldaScoreCounter.innerHTML = parseInt(zeldaScoreCounter.innerHTML) + 1;
+
+    } else if 
+    (b1.classList.contains('zelda') && b4.classList.contains('zelda') && b7.classList.contains('zelda')) {
+        document.querySelector('.result').innerHTML = "Zelda Wins!"
+        gameWon = true;
+        zeldaScoreCounter.innerHTML = parseInt(zeldaScoreCounter.innerHTML) + 1;
+        
+    } else if
+    (b2.classList.contains('zelda') && b5.classList.contains('zelda') && b8.classList.contains('zelda')) {
+        document.querySelector('.result').innerHTML = "Zelda Wins!"
+        gameWon = true;
+        zeldaScoreCounter.innerHTML = parseInt(zeldaScoreCounter.innerHTML) + 1;
+       
+    } else if
+    (b2.classList.contains('zelda') && b4.classList.contains('zelda') && b6.classList.contains('zelda')) {
+        document.querySelector('.result').innerHTML = "Zelda Wins!"
+        gameWon = true;
+        zeldaScoreCounter.innerHTML = parseInt(zeldaScoreCounter.innerHTML) + 1;
+        
+    } else if
+    (b3.classList.contains('zelda') && b4.classList.contains('zelda') && b5.classList.contains('zelda')) {
+        document.querySelector('.result').innerHTML = "Zelda Wins!"
+        gameWon = true;
+        zeldaScoreCounter.innerHTML = parseInt(zeldaScoreCounter.innerHTML) + 1;
+        
+    } else if
+    (b6.classList.contains('zelda') && b7.classList.contains('zelda') && b8.classList.contains('zelda')) {
+        document.querySelector('.result').innerHTML = "Zelda Wins!"
+        gameWon = true;
+        zeldaScoreCounter.innerHTML = parseInt(zeldaScoreCounter.innerHTML) + 1;
+        
+    } else if 
+    ((b0.classList.contains('link') || b0.classList.contains('zelda')) && (b1.classList.contains('link') || b1.classList.contains('zelda')) && (b2.classList.contains('link') || b2.classList.contains('zelda')) && (b3.classList.contains('link') || b3.classList.contains('zelda')) && (b4.classList.contains('link') || b4.classList.contains('zelda')) && (b5.classList.contains('link') || b5.classList.contains('zelda')) && (b6.classList.contains('link') || b6.classList.contains('zelda')) && (b7.classList.contains('link') || b7.classList.contains('zelda')) && (b8.classList.contains('link') || b8.classList.contains('zelda'))) {
             document.querySelector('.result').innerHTML = "It's a Draw!";
-            
         }
 }
+reset.addEventListener('click', function(event){
+    for (var i = 0; i < 9; i++){
+        tile[i].classList.remove("link")
+        tile[i].classList.remove("zelda")
+        gameWon = false
+        document.querySelector('.result').innerHTML = "";
+    }
+})
 
 
 
