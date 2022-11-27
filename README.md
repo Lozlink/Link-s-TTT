@@ -18,8 +18,8 @@ A simple Zelda-themed Tic-Tac-Toe Game
 - Used an unique downloaded font!
 
 ## :scream: Bugs to fix :poop:
-- Clicking anywhere else on the page still counts it as a click. 
-- Can't disable the tiles still working after the game ends. 
+- Clicking anywhere else on the page still counts it as a click. (fixed on 28/11/2022)
+- Can't disable the tiles still working after the game ends.  (fixed on 28/11/2022)
 
 ## :sob: Lessons learnt
 - Plan Better. 
@@ -27,6 +27,6 @@ A simple Zelda-themed Tic-Tac-Toe Game
 - 
 
 ## :white_check_mark: Future features
-- Score Counter
-- More intuitive feature to reset the game, instead of reloading.
+- Score Counter (Added on 28/11/2022)
+- More intuitive feature to reset the game, instead of reloading. (Added on 28/11/2022)
 - Audio integration.
