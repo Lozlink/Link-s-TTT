@@ -300,6 +300,7 @@ reset.addEventListener('click', function(event){
         tile[i].classList.remove("zelda")
         gameWon = false
         document.querySelector('.result').innerHTML = "";
+        turn = linkX
     }
 })
 
