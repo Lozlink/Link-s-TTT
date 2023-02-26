@@ -24,6 +24,7 @@ A simple Zelda-themed Tic-Tac-Toe Game
 ## :sob: Lessons learnt
 - Plan Better. 
 - Have better time allocation to the prioritized items.
+- 
 
 ## :white_check_mark: Future features
 - Score Counter (Added on 28/11/2022)
