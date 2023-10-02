@@ -28,8 +28,9 @@ boxes.forEach((box) => {
 function handleClick(event) {
   const targetBox = event.target;
 
-  if (targetBox.textContent !== "") {
+  if (targetBox.classList.contains('link') || targetBox.classList.contains('zelda') ) {
     event.preventDefault();
+    resultMessage.textContent = 'This box is already chosen'
     return;
   }
 

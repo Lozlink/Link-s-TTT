@@ -42,10 +42,11 @@ body {
     background-image: url(https://chaosmechanica.files.wordpress.com/2012/12/legend-of-zelda-triforce.jpg?w=848);
     background-size: cover;
     font-family: Zelda;
+    
 }
  body img {
     opacity: 50%;
-    background-repeat:no-repeat
+    background-repeat:no-repeat;
 }
 
 aside {
@@ -56,7 +57,7 @@ aside {
 
 .grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     max-width: 750px;
     margin: 0 auto;
 }
@@ -104,4 +105,44 @@ aside {
 
 #b2, #b5, #b8 {
     border-right: none;
+}
+/* Screens smaller than 600px */
+@media (max-width: 600px) {
+    body {
+        background-size: cover;
+        background-repeat: none;
+    }
+    h1 {
+        font-size: 3rem; 
+    }
+    .grid {
+        grid-template-columns: auto auto auto
+    }
+    .box {
+        height: 150px;
+        width: 150px; 
+    }
+    
+}
+
+/* For screens larger than 600px */
+@media (min-width: 601px) and (max-width: 1024px){
+
+    body  {
+        background-size: cover;
+        background-repeat: none;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+    .grid { 
+        grid-template-columns: auto auto auto;
+        max-width: 100%;
+    }
+    .box {
+        height: 250px;
+        width: 250px;
+    }
+   
 }
